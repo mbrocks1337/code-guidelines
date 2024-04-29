@@ -1,0 +1,42 @@
+<script setup lang="ts">
+import { Server, StickyNote, Settings2 } from "lucide-vue-next";
+</script>
+<template>
+  <main
+    class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 bg-muted/40 p-4 md:gap-8 md:p-10"
+  >
+    <div class="mx-auto max-w-xl grid w-full gap-2 text-center">
+      <h1 class="text-3xl font-semibold">Coding Guidelines</h1>
+      <p class="text-sm text-muted-foreground">
+        Hier findest du eine umfassende Sammlung von Best Practices,
+        Konventionen und Regeln für die Entwicklung.
+      </p>
+      <p class="text-sm text-muted-foreground">
+        Unsere Richtlinien helfen Entwicklern dabei, sauberen, effizienten und
+        gut dokumentierten Code zu schreiben, der leicht wartbar und skalierbar
+        ist.
+      </p>
+    </div>
+    <div class="mx-auto grid w-full max-w-6xl items-start gap-6">
+      <div class="grid grid-cols-2 gap-6">
+        <NavigationCard link="general" label="Allgemein" class="col-span-2">
+          <Settings2 :size="48" />
+        </NavigationCard>
+        <NavigationCard
+          link="frontend"
+          label="Frontend"
+          class="col-span-2 md:col-span-1"
+        >
+          <StickyNote :size="48" />
+        </NavigationCard>
+        <NavigationCard
+          link="backend"
+          label="Backend"
+          class="col-span-2 md:col-span-1"
+        >
+          <Server :size="48" />
+        </NavigationCard>
+      </div>
+    </div>
+  </main>
+</template>
