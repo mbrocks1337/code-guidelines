@@ -6,7 +6,7 @@ import type {
 export default {
   scrollBehavior(
     to: RouteLocationNormalized,
-    from: RouteLocationNormalizedLoaded | undefined,
+    from: RouteLocationNormalizedLoaded,
   ) {
     const behavior = {
       el: to.hash,
@@ -14,7 +14,7 @@ export default {
       behavior: "smooth",
     };
 
-    if (from?.hash) {
+    if (from.path !== "/") {
       return behavior;
     }
 
