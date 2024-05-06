@@ -1,6 +1,8 @@
 <script setup lang="ts">
-useSeoMeta({
+useHead({
   title: "Coding Guidelines",
+  link: [{ rel: "icon", href: "/code-guidelines/favicon.ico" }],
+  meta: [{ name: "robots", content: "noindex" }],
 });
 </script>
 

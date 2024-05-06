@@ -3,7 +3,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
 </script>
 <template>
   <main
-    class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 bg-muted/40 p-4 pb-32 md:gap-8 md:p-10"
+    class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-4 pb-32 md:gap-8 md:p-10"
   >
     <div class="mx-auto max-w-xl grid w-full gap-6 text-center">
       <h1 class="text-4xl font-semibold">Coding Guidelines</h1>
