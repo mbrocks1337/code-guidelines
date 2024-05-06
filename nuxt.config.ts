@@ -15,4 +15,7 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
+  nitro: {
+    baseURL: "/code-guidelines/",
+  },
 });
