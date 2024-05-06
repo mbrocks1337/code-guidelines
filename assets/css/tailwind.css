@@ -83,11 +83,10 @@
     }
 
     html {
-        @apply scroll-smooth scroll-pt-[calc(1.5rem_+_theme(spacing.16))]
+        @apply scroll-smooth scroll-pt-[calc(1.5rem_+_theme(spacing.16))] bg-background;
     }
 
     body {
         @apply bg-muted/40 text-foreground min-h-screen antialiased;
-
     }
 }
