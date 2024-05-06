@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    baseURL: "/code-guidelines/",
   },
   ssr: false,
   experimental: {
@@ -14,8 +15,5 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: true,
-  },
-  nitro: {
-    baseURL: "/code-guidelines/",
   },
 });
