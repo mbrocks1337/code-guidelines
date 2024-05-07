@@ -24,7 +24,7 @@
   if (!request.body) return;
 
   function formatUserEmail(): string {
-    // innerhalb dieser Funktion werden Variablen von Außerhalb verwendet
+    // Innerhalb dieser Funktion werden Variablen von außerhalb verwendet
     if (!request.body) return '';
     return request.body.email.toLowerCase();
   }

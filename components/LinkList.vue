@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <Collapsible v-model:open="isOpen">
-    <CollapsibleTrigger class="font-bold underline">
+    <CollapsibleTrigger class="text-muted-foreground underline text-xs">
       Quellen...
     </CollapsibleTrigger>
     <CollapsibleContent>

@@ -55,9 +55,9 @@
       </p>
       <CodeSnippet
         type="do"
-        code="function filterNumber(number: number) {
-  if (number % 2 === 0) {
-    return number;
+        code="function filterNumber(value: number) {
+  if (value % 2 === 0) {
+    return value;
   }
 
   return 0;
@@ -69,8 +69,8 @@ function calculate(bottom: number, top: number) {
   }
 
   let sum = 0;
-  for (let number = bottom; number <= top; number++) {
-    sum += filterNumber(number);
+  for (let value = bottom; value <= top; value++) {
+    sum += filterNumber(value);
   }
   return sum;
 }"

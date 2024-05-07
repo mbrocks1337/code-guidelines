@@ -11,7 +11,6 @@ function handleClick() {
 function handleScroll() {
   showScrollButton.value = window.scrollY > THRESHOLD_IN_PX;
 }
-
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });

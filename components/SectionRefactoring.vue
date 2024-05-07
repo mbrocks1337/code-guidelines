@@ -17,18 +17,18 @@
         Subjektive Änderungen sollten vermieden werden.
       </p>
       <CodeSnippet
-        type="do"
-        code="// Vorher (z.B. falls Variable eine Zeitangabe für das Speichern von Cookies ist)
-var h = 6;
-// Nachher
-const cookieDurationInHours = 6;"
-      />
-      <CodeSnippet
         type="dont"
         code="// Vorher
 const userScore = 0;
 // Nachher
 const scoreOfUser = 0;"
+      />
+      <CodeSnippet
+        type="do"
+        code="// Vorher (z.B. falls Variable eine Zeitangabe für das Speichern von Cookies ist)
+var h = 6;
+// Nachher
+const cookieDurationInHours = 6;"
       />
     </CardContent>
   </Card>

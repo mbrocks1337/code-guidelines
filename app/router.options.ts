@@ -8,6 +8,8 @@ export default {
     to: RouteLocationNormalized,
     from: RouteLocationNormalizedLoaded,
   ) {
+    if (to.hash === "") return { top: 0 };
+
     const behavior = {
       el: to.hash,
       top: 85,

@@ -10,17 +10,17 @@
     >
       <nav class="grid gap-4 text-sm text-muted-foreground">
         <a href="#">Vue</a>
+        <a href="#">Nuxt</a>
         <a href="#">TypeScript</a>
         <a href="#">Prettier</a>
         <a href="#">ESLint</a>
       </nav>
       <div class="grid gap-6">
-        <Alert variant="info">
-          <AlertTitle>To Be Done</AlertTitle>
-          <AlertDescription>
-            This page is currently under construction.
-          </AlertDescription>
-        </Alert>
+        <SectionVue />
+        <SectionNuxt />
+        <SectionTypeScript />
+        <SectionESLint />
+        <SectionPrettier />
       </div>
     </div>
   </main>

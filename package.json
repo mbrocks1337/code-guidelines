@@ -1,7 +1,14 @@
 {
-  "name": "nuxt-app",
+  "name": "code-guidelines",
   "private": true,
+  "description": "A collection of coding guidelines",
+  "license": "UNLICENSED",
   "type": "module",
+  "email": "m.brocks@mediahaus.com",
+  "bugs": {
+    "url": "https://github.com/mbrocks1337/code-guidelines/issues",
+    "email": "m.brocks@mediahaus.com"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
