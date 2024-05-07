@@ -51,4 +51,3 @@ Before this fix foo wasn't enabled at all, behavior changes from <old> to <new>"
     </CardFooter>
   </Card>
 </template>
-<script setup lang="ts"></script>

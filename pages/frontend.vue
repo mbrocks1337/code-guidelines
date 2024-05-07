@@ -9,19 +9,20 @@
       class="mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]"
     >
       <nav class="grid gap-4 text-sm text-muted-foreground">
-        <a href="#">Vue</a>
-        <a href="#">Nuxt</a>
-        <a href="#">TypeScript</a>
-        <a href="#">Prettier</a>
-        <a href="#">ESLint</a>
+        <a href="#vue">Vue</a>
+        <a href="#nuxt">Nuxt</a>
+        <a href="#typescript">TypeScript</a>
+        <a href="#eslint">Prettier</a>
+        <a href="#prettier">ESLint</a>
       </nav>
       <div class="grid gap-6">
-        <SectionVue />
-        <SectionNuxt />
-        <SectionTypeScript />
-        <SectionESLint />
-        <SectionPrettier />
+        <SectionVue id="vue" />
+        <SectionNuxt id="nuxt" />
+        <SectionTypeScript id="typescript" />
+        <SectionESLint id="eslint" />
+        <SectionPrettier id="prettier" />
       </div>
     </div>
   </main>
 </template>
+<script setup lang="ts"></script>

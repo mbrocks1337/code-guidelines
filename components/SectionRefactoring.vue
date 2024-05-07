@@ -33,4 +33,3 @@ const cookieDurationInHours = 6;"
     </CardContent>
   </Card>
 </template>
-<script setup lang="ts"></script>

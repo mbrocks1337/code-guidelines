@@ -20,9 +20,9 @@
       </p>
       <p>
         Um Prettier mit Nuxt und ESLint verwenden zu können und deren Regeln
-        nicht kollidieren gibt es ein Prettier Plugin (
+        nicht kollidieren gibt es ein Prettier Plugin für ESLint (
         <InlineCode>eslint-plugin-prettier</InlineCode>
-        ) für ESLint und Prettier Einstellungen für ESLint (
+        ) und Prettier Einstellungen für ESLint (
         <InlineCode>eslint-config-prettier</InlineCode>
         ).
       </p>
@@ -32,4 +32,3 @@
     </CardFooter>
   </Card>
 </template>
-<script setup lang="ts"></script>

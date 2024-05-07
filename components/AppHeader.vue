@@ -29,11 +29,18 @@ const routes: RouteEntry[] = [
     <nav
       class="text-muted-foreground font-medium flex flex-row items-center gap-5 text-sm lg:gap-6"
     >
-      <NuxtLink :to="{ name: 'index' }" class="hidden sm:block">
+      <NuxtLink :to="{ name: 'index' }">
         <img
+          class="hidden sm:block"
           src="/assets/images/logo-mediahaus.svg"
           alt="MEDIAHAUS Logo"
           width="200"
+        />
+        <img
+          class="block sm:hidden"
+          src="/assets/images/mediahaus_small.svg"
+          alt="MEDIAHAUS Logo"
+          width="28"
         />
       </NuxtLink>
       <NuxtLink

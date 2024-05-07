@@ -48,4 +48,3 @@ function handleRequest(request: Request) {
     </CardContent>
   </Card>
 </template>
-<script setup lang="ts"></script>
