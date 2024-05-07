@@ -1,6 +1,6 @@
 <template>
   <Card>
-    <CardHeader class="flex flex-row justify-between gap-2">
+    <CardHeader class="flex flex-row justify-between gap-4">
       <div class="flex flex-col gap-y-1.5">
         <CardTitle>Vue</CardTitle>
         <CardDescription>

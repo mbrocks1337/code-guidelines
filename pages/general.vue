@@ -9,23 +9,69 @@
       class="mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]"
     >
       <nav class="grid gap-4 text-sm text-muted-foreground">
-        <a href="#git-message">Git Commit Messages</a>
-        <a href="#refactoring">Refactoring</a>
-        <a href="#code-nesting">Code Nesting</a>
-        <a href="#comments">Comments</a>
-        <a href="#naming">Benennung</a>
-        <a href="#dry">DRY</a>
-        <a href="#side-effects">Side Effects</a>
+        <a v-for="item in layout" :key="item.id" :href="`#${item.id}`">
+          {{ item.label }}
+        </a>
       </nav>
       <div class="grid gap-6">
-        <SectionGitCommitMessages id="git-message" />
-        <SectionRefactoring id="refactoring" />
-        <SectionCodeNesting id="code-nesting" />
-        <SectionComments id="comments" />
-        <SectionNaming id="naming" />
-        <SectionDRY id="dry" />
-        <SectionSideEffects id="side-effects" />
+        <component
+          :is="item.component"
+          v-for="item in layout"
+          :id="item.id"
+          :key="item.id"
+          class="scroll-mt-[calc(1.5rem_+_theme(spacing.16))]"
+        />
       </div>
     </div>
   </main>
 </template>
+<script setup lang="ts">
+import {
+  SectionGitCommitMessages,
+  SectionRefactoring,
+  SectionCodeNesting,
+  SectionComments,
+  SectionNaming,
+  SectionDRY,
+  SectionSideEffects,
+} from "#components";
+import type { LayoutItem } from "~/types/global";
+
+const layout: LayoutItem[] = [
+  {
+    component: SectionGitCommitMessages,
+    id: "git-message",
+    label: "Git Commit Messages",
+  },
+  {
+    component: SectionRefactoring,
+    id: "refactoring",
+    label: "Refactoring",
+  },
+  {
+    component: SectionCodeNesting,
+    id: "code-nesting",
+    label: "Code Nesting",
+  },
+  {
+    component: SectionComments,
+    id: "comments",
+    label: "Comments",
+  },
+  {
+    component: SectionNaming,
+    id: "naming",
+    label: "Benennung",
+  },
+  {
+    component: SectionDRY,
+    id: "dry",
+    label: "DRY",
+  },
+  {
+    component: SectionSideEffects,
+    id: "side-effects",
+    label: "Side Effects",
+  },
+];
+</script>

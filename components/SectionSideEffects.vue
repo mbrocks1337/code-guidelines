@@ -18,6 +18,11 @@
         modifizierten Code zurückgeben. Dadurch sind diese Funktionen auch in
         sich geschlossen.
       </p>
+      <Alert variant="info">
+        <AlertDescription>
+          Geschlossene Funktionen lassen sich leichter durch Unit-Tests testen.
+        </AlertDescription>
+      </Alert>
       <CodeSnippet
         type="dont"
         code="function handleRequest(request: Request) {

@@ -11,7 +11,7 @@ defineProps<{
     :external="external"
     :target="external ? '_blank' : undefined"
     :to="to"
-    class="text-blue-600 hover:underline inline-flex items-center gap-1"
+    class="text-info hover:underline inline-flex items-center gap-1"
   >
     <slot />
     <ExternalLink class="h-4 w-4" />

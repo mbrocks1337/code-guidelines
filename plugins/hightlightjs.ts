@@ -1,4 +1,4 @@
-import "highlight.js/styles/atom-one-dark-reasonable.css";
+import "highlight.js/styles/atom-one-dark.css";
 import hljs from "highlight.js/lib/core";
 import typescript from "highlight.js/lib/languages/typescript";
 import plaintext from "highlight.js/lib/languages/plaintext";

@@ -61,7 +61,7 @@
         --border: 217.2 32.6% 17.5%;
         --input: 217.2 32.6% 17.5%;
 
-        --primary: 334 83% 35%;
+        --primary: 334 83% 60%;
         --primary-foreground: 210 40% 98%;
 
         --secondary: 217.2 32.6% 17.5%;
@@ -83,10 +83,14 @@
     }
 
     html {
-        @apply scroll-smooth scroll-pt-[calc(1.5rem_+_theme(spacing.16))] bg-background;
+        @apply scroll-smooth bg-background;
+
+        &.dark {
+            color-scheme: dark;
+        }
     }
 
     body {
-        @apply bg-muted/40 text-foreground min-h-screen antialiased;
+        @apply bg-muted/40 text-foreground min-h-screen antialiased overflow-y-scroll;
     }
 }

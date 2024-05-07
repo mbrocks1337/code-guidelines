@@ -1,12 +1,12 @@
 <template>
   <Card>
-    <CardHeader class="flex flex-row justify-between gap-2">
+    <CardHeader class="flex flex-row justify-between gap-4">
       <div class="flex flex-col gap-y-1.5">
         <CardTitle>TypeScript</CardTitle>
         <CardDescription>
           TypeScript ist ein Superset von JavaScript. Alles in JavaScript ist
           valides TypeScript. Durch statische Typisierung fallen Fehler
-          frühzeitig auf.
+          frühzeitig auf. Durch Interfaces ist der Code leichter zu verstehen.
         </CardDescription>
       </div>
       <img src="/assets/images/typescript.svg" alt="Vue Logo" width="100" />
@@ -27,7 +27,7 @@
         -Tag.
       </p>
       <p>
-        Zusätzlich kann in der
+        Zusätzlich sollte in der
         <InlineCode>nuxt.config.ts</InlineCode>
 
         TypeScript strikter gestellt und mit einem

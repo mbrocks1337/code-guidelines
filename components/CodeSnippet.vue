@@ -15,9 +15,9 @@ const props = withDefaults(
 );
 
 const classObject = reactive({
-  "text-green-600": props.type === "do",
-  "text-red-600": props.type === "dont",
-  "text-yellow-600": props.type === "good",
+  "text-green-500": props.type === "do",
+  "text-red-500": props.type === "dont",
+  "text-yellow-500": props.type === "good",
 });
 </script>
 

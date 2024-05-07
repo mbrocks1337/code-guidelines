@@ -14,7 +14,7 @@ defineProps<{
     <CollapsibleContent>
       <ul class="list-disc grid gap-1 my-3">
         <li v-for="link in links" :key="link">
-          <NuxtLink external target="_blank" :href="link" class="text-blue-600">
+          <NuxtLink external target="_blank" :href="link" class="text-info">
             {{ link }}
           </NuxtLink>
         </li>

@@ -1,6 +1,6 @@
 <template>
   <Card>
-    <CardHeader class="flex flex-row justify-between gap-2">
+    <CardHeader class="flex flex-row justify-between gap-4">
       <div class="flex flex-col gap-y-1.5">
         <CardTitle>ESLint</CardTitle>
         <CardDescription>
@@ -36,7 +36,7 @@
         </InlineLink>
         .
       </p>
-      <p>ESLint sollte aktuell maximal die Version 8.57.0 haben.</p>
+      <p>ESLint sollte aktuell maximal die <b>Version 8.57.0</b> haben.</p>
       <section>
         <CodeSnippet
           code='module.exports = {
