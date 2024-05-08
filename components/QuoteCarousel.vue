@@ -122,6 +122,62 @@ const quotes: QuoteItem[] = [
     text: "The only limit to our realization of tomorrow will be our doubts of today.",
     author: "Franklin D. Roosevelt",
   },
+  {
+    text: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    author: "Winston Churchill",
+  },
+  {
+    text: "The expert in anything was once a beginner.",
+    author: "Helen Hayes",
+  },
+  {
+    text: "The beautiful thing about learning is that no one can take it away from you.",
+    author: "B.B. King",
+  },
+  {
+    text: "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+    author: "Malcolm X",
+  },
+  {
+    text: "The only way to learn mathematics is to do mathematics.",
+    author: "Paul Halmos",
+  },
+  {
+    text: "Education is not the filling of a pail, but the lighting of a fire.",
+    author: "William Butler Yeats",
+  },
+  {
+    text: "Learning never exhausts the mind.",
+    author: "Leonardo da Vinci",
+  },
+  {
+    text: "The roots of education are bitter, but the fruit is sweet.",
+    author: "Aristotle",
+  },
+  {
+    text: "The future belongs to those who believe in the beauty of their dreams.",
+    author: "Eleanor Roosevelt",
+  },
+  {
+    text: "It does not matter how slowly you go as long as you do not stop.",
+    author: "Confucius",
+  },
+  {
+    text: "You don’t have to be great to start, but you have to start to be great.",
+    author: "Zig Ziglar",
+  },
+  {
+    text: "The only way to do great work is to love what you do.",
+    author: "Steve Jobs",
+  },
+  {
+    text: "Every accomplishment starts with the decision to try.",
+    author: "John F. Kennedy",
+  },
+  {
+    text: "Believe you can and you're halfway there.",
+    author: "Theodore Roosevelt",
+  },
 ];
 </script>
 <template>
