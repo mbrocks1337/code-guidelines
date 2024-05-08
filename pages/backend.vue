@@ -19,7 +19,7 @@
           v-for="item in layout"
           :id="item.id"
           :key="item.id"
-          data-aos="fade-left"
+          data-aos="zoom-in"
           class="scroll-mt-[calc(1.5rem_+_theme(spacing.16))]"
         />
       </div>
