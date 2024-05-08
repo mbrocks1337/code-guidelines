@@ -16,7 +16,7 @@
         <InlineLink to="https://nuxt.com/docs/guide" external
           >Dokumentation
         </InlineLink>
-        von Nuxt steht zur verfügung. Best Practises von Vue werden hier auch
+        von Nuxt steht zur Verfügung. Best Practises von Vue werden hier auch
         angewandt. Am effektivsten ist Nuxt in Verbindung mit
         <InlineLink to="#typescript">TypeScript</InlineLink>
         ,
@@ -56,8 +56,8 @@ const double = computed(() => count.value * 2);"
         <b>Vordefinierte Projektstruktur</b>
         <p>
           Nuxt gibt eine feste Projektstruktur vor, welche man befolgen sollte.
-          Somit ist ein neues Projekt direkt vertraut und man weiß wo man suchen
-          muss.
+          Somit ist ein neues Projekt direkt vertraut und man weiß, wo man
+          suchen muss.
         </p>
         <p>
           Eine

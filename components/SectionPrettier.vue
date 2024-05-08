@@ -20,7 +20,7 @@
       </p>
       <p>
         Um Prettier mit Nuxt und ESLint verwenden zu können und deren Regeln
-        nicht kollidieren gibt es ein Prettier Plugin für ESLint (
+        nicht kollidieren, gibt es ein Prettier Plugin für ESLint (
         <InlineCode>eslint-plugin-prettier</InlineCode>
         ) und Prettier Einstellungen für ESLint (
         <InlineCode>eslint-config-prettier</InlineCode>

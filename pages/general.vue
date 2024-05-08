@@ -20,6 +20,7 @@
           :id="item.id"
           :key="item.id"
           class="scroll-mt-[calc(1.5rem_+_theme(spacing.16))]"
+          data-aos="fade-left"
         />
       </div>
     </div>

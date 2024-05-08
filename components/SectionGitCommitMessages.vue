@@ -15,9 +15,9 @@
     <CardContent class="grid gap-4">
       <p>
         Die erste Zeile beschreibt den Commit und diese wird auch in der Git
-        History dargestellt. Sie wird mit einem Prefix versehen um zu verstehen,
-        was der Commit thematisiert. Die Headline und die verschiedenen
-        Sektionen mit einem Leerzeile trennen.
+        History dargestellt. Sie wird mit einem Präfix versehen, um zu
+        verstehen, was der Commit thematisiert. Die Headline und die
+        verschiedenen Sektionen mit einem Leerzeile trennen.
         <TextTooltip
           label="Eine Änderung, welche eine bestehende Funktionalität beeinträchtigt oder unbrauchbar macht."
           >BREAKING CHANGES

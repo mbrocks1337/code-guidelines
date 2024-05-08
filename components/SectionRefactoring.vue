@@ -10,7 +10,7 @@
       <p>
         Das Refactoring sollte nicht separiert von einer Aufgabe geschehen. Es
         sollte immer inhaltlich zur Aufgabe passen, damit beim Commit nur die
-        angepassten Dateien auftauchen.
+        angepassten Datein auftauchen.
       </p>
       <p>
         <b>Leserlichkeit</b> und <b>Performance</b> stehen im Vordergrund.

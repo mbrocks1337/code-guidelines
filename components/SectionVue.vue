@@ -28,7 +28,7 @@
       <p>
         Mit beiden API Styles lassen sich alle gewöhnlichen Anwendungsfälle
         umsetzen. Die Options API basiert sogar auf der Composition API. Die
-        Options API basiert auf einen klassenbasiertes Model. Die Composition
+        Options API basiert auf einem klassenbasiertes Model. Die Composition
         API basiert auf reaktiven Variablen.
       </p>
       <Alert variant="info">
@@ -38,7 +38,7 @@
             <TextTooltip label="Developer Experience">DX</TextTooltip>
             für die Composition API spezialisiert.</b
           >
-          Darum wird diese empfohlen um die Entwicklung zu erleichtern. Die
+          Darum wird diese empfohlen, um die Entwicklung zu erleichtern. Die
           Options API kann trotzdem für kleinere Projekte verwendet werden.
         </AlertDescription>
       </Alert>
@@ -102,3 +102,7 @@ onMounted(() => {
     </CardFooter>
   </Card>
 </template>
+
+<script>
+const arr = ["test", "test"];
+</script>

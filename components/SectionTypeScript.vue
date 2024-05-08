@@ -14,13 +14,13 @@
     <CardContent class="grid gap-4">
       <p>
         TypeScript ist vollständig kompatibel mit Vue und Nuxt. Fehler werden
-        beim kompilieren des TypeScripts in JavaScript erkannt und nicht erst
+        beim Kompilieren des TypeScripts in JavaScript erkannt und nicht erst
         innerhalb der Runtime.
       </p>
       <p>
         Um in
         <InlineCode>.vue</InlineCode>
-        -Dateien TypeScript zu verwenden, nutze dafür
+        -Datein TypeScript zu verwenden, nutze dafür
         <InlineCode>lang="ts"</InlineCode>
         im
         <InlineCode>script</InlineCode>
@@ -51,8 +51,8 @@
           <b>
             TypeScript ist sehr umfangreich und im vollen Umfang sehr mächtig.
           </b>
-          Besser frühzeitig oft kleine Fehler beheben, als diese später auf Prod
-          zu finden.
+          Besser frühzeitig oft kleine Fehler beheben, als diese später auf
+          Produktion zu finden.
         </AlertDescription>
       </Alert>
     </CardContent>

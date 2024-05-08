@@ -10,7 +10,7 @@
             label="Code-Editor wie z.B. Visual Studio Code oder PHPStorm"
             >IDE
           </TextTooltip>
-          dargestellt
+          dargestellt.
         </CardDescription>
       </div>
       <img src="/assets/images/eslint.svg" alt="Vue Logo" width="100" />
@@ -27,7 +27,7 @@
       <p>
         Nuxt bietet ein eigenes Plugin für ESLint an, welches in Verbindung mit
         dem Prettier-Plugin verwendet werden kann. Die neuste Version 9
-        funktioniert aktuell mit PHPStorm noch nicht. Einen Installations-Guide
+        funktioniert aktuell mit PHPStorm noch nicht. Einen Installationsguide
         für die Legacy Version gibts
         <InlineLink
           to="https://eslint.nuxt.com/packages/config#legacy-config-format"

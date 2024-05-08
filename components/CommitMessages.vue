@@ -31,7 +31,7 @@ const defaultValue = ["commit-message-1"];
       <AccordionContent>
         <InlineCode>package.json</InlineCode>
         ,
-        <InlineCode>composer.json</InlineCode> oder ähnliches müssen geupdated
+        <InlineCode>composer.json</InlineCode> oder ähnliches müssen upgedated
         werden.
       </AccordionContent>
     </AccordionItem>

@@ -3,15 +3,16 @@
     <CardHeader>
       <CardTitle>Code Nesting</CardTitle>
       <CardDescription>
-        Um den Code übersichtlich zu strukturieren sollte eine zu starke
-        Vernestung vermieden werden. Extrahierung und Inversion wirken dagegen.
+        Um den Code übersichtlich zu strukturieren, sollte eine zu starke
+        Schachtelung vermieden werden. Extrahierung und Inversion wirken
+        dagegen.
       </CardDescription>
     </CardHeader>
     <CardContent class="grid gap-4">
       <section>
         <h4 class="font-bold">Extrahierung</h4>
         <p>
-          Ein Funktion sollte nur eine Aufgabe erfüllen. In den meisten Fällen
+          Eine Funktion sollte nur eine Aufgabe erfüllen. In den meisten Fällen
           kann so eine Funktion mit vielen Aufgaben unterteilt werden. Dies
           sorgt für einen strukturierten Code, welchen man besser folgen kann.
         </p>
@@ -77,9 +78,9 @@ function calculate(bottom: number, top: number) {
       />
       <p>
         Beide Codeschnipsel erfüllen die gleiche Aufgabe. Obwohl der
-        überarbeitete Code mehr Zeilen beansprucht ist er dennoch
+        überarbeitete Code mehr Zeilen beansprucht, ist er dennoch
         übersichtlicher und verständlicher. Außerdem wird so eine mehrfache
-        Vernestung vermieden.
+        Verschachtelung vermieden.
       </p>
     </CardContent>
     <CardFooter>

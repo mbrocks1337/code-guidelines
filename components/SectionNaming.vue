@@ -20,7 +20,7 @@
       <img src="/assets/images/intelliSense.png" alt="IntelliSense Beispiel" />
       <Alert variant="info">
         <AlertDescription>
-          Man ließt Code öfter als man schreibt. Inzwischen verwendet man große
+          Man liest Code öfter, als man schreibt. Inzwischen verwendet man große
           4K Bildschirme. Somit hat man keine Vorteile mit verkürzten
           Variablennamen.
         </AlertDescription>
@@ -96,7 +96,7 @@ function moviesOnPage(movies: Movie[], page: number): Movie[] {
       />
       <hr />
       <p>
-        Variablen sollten nicht mit einem Typen-Prefix beginnen. Sie sollten
+        Variablen sollten nicht mit einem Typen-Präfix beginnen. Sie sollten
         jedoch Einheiten beinhalten.
       </p>
       <CodeSnippet type="dont" code="const iDelay = 10;" />

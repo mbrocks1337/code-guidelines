@@ -8,7 +8,7 @@
     </CardHeader>
     <CardContent class="grid gap-4">
       <p>
-        Im folgendem Beispiel werden zwei Funktionen mit ähnlicher
+        Im folgenden Beispiel werden zwei Funktionen mit ähnlicher
         Funktionalität <b>generalisiert und zusammengefügt</b>. Dadurch lässt
         sich der Code im späteren Verlauf einfacher anpassen und erweitern.
       </p>

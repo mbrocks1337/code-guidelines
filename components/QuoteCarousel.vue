@@ -202,7 +202,7 @@ const quotes: QuoteItem[] = [
           class="h-full relative text-center text-xl rounded-lg border bg-card shadow-sm px-4 md:px-[10rem] grid gap-6"
         >
           <Quote
-            class="absolute bottom-5 left-5 text-muted-foreground/10"
+            class="absolute bottom-5 left-5 text-muted-foreground/10 dark:text-muted-foreground/20"
             :size="56"
             :stroke-width="1"
           />
@@ -211,7 +211,7 @@ const quotes: QuoteItem[] = [
             - {{ quote.author }}
           </div>
           <Quote
-            class="absolute top-5 right-5 text-muted-foreground/10"
+            class="absolute top-5 right-5 text-muted-foreground/10 dark:text-muted-foreground/20"
             :size="56"
             :stroke-width="1"
           />

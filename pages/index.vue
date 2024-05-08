@@ -5,7 +5,10 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
   <main
     class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-4 pb-32 md:gap-8 md:p-10"
   >
-    <div class="mx-auto max-w-xl grid w-full gap-6 text-center">
+    <div
+      class="mx-auto max-w-xl grid w-full gap-6 text-center"
+      data-aos="fade-in"
+    >
       <h1 class="text-4xl font-semibold">Coding Guidelines</h1>
       <p class="text-sm text-muted-foreground">
         Hier findest du eine umfassende Sammlung von Best Practices,
@@ -17,16 +20,22 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
         ist.
       </p>
     </div>
-    <QuoteCarousel />
+    <QuoteCarousel data-aos="fade-in" data-aos-delay="300" />
     <div class="mx-auto grid w-full max-w-6xl items-start gap-6">
       <div class="grid grid-cols-2 gap-6">
-        <NavigationCard link="general" label="Allgemein" class="col-span-2">
+        <NavigationCard
+          link="general"
+          label="Allgemein"
+          class="col-span-2"
+          data-aos="fade-down"
+        >
           <Settings2 :size="48" />
         </NavigationCard>
         <NavigationCard
           link="frontend"
           label="Frontend"
           class="col-span-2 md:col-span-1"
+          data-aos="fade-right"
         >
           <StickyNote :size="48" />
         </NavigationCard>
@@ -34,6 +43,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
           link="backend"
           label="Backend"
           class="col-span-2 md:col-span-1"
+          data-aos="fade-left"
         >
           <Server :size="48" />
         </NavigationCard>

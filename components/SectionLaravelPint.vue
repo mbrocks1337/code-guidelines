@@ -16,8 +16,8 @@
         .
       </p>
       <p>
-        Falls man mit Laravel Sail (Docker) arbeitet muss man zusätzlich noch
-        den PHP Interpreter in PHPStorm einstellen. Wie das Funktioniert findest
+        Falls man mit Laravel Sail (Docker) arbeitet, muss man zusätzlich noch
+        den PHP Interpreter in PHPStorm einstellen. Wie das funktioniert findest
         du auf der
         <InlineLink
           to="https://www.jetbrains.com/help/phpstorm/using-laravel-pint.html#configure-tool-options"
