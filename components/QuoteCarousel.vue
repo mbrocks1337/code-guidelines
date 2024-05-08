@@ -7,6 +7,10 @@ import { shuffle } from "~/lib/utils";
 
 const quotes: QuoteItem[] = [
   {
+    text: "Gegen Lavendeltanten hilft nur Bastelpizza.",
+    author: "Johanna K.",
+  },
+  {
     text: "Simplicity is the ultimate sophistication.",
     author: "Leonardo da Vinci",
   },
