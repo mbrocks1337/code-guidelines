@@ -27,7 +27,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
           link="general"
           label="Allgemein"
           class="col-span-2"
-          data-aos="zoom-in"
+          data-aos="fade-in"
         >
           <Settings2 :size="48" />
         </NavigationCard>
@@ -35,7 +35,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
           link="frontend"
           label="Frontend"
           class="col-span-2 md:col-span-1"
-          data-aos="zoom-in"
+          data-aos="fade-in"
         >
           <StickyNote :size="48" />
         </NavigationCard>
@@ -43,7 +43,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
           link="backend"
           label="Backend"
           class="col-span-2 md:col-span-1"
-          data-aos="zoom-in"
+          data-aos="fade-in"
         >
           <Server :size="48" />
         </NavigationCard>
