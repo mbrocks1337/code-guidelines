@@ -13,7 +13,7 @@ defineProps<{
     :to="to"
     class="text-info hover:underline inline-flex items-center gap-1"
   >
-    <slot />
-    <ExternalLink class="h-4 w-4" />
+    <slot>{{ to }}</slot>
+    <ExternalLink v-if="external" class="h-4 w-4" />
   </NuxtLink>
 </template>

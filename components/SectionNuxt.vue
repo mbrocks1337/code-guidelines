@@ -17,8 +17,13 @@
           >Dokumentation
         </InlineLink>
         von Nuxt steht zur verfügung. Best Practises von Vue werden hier auch
-        angewandt. Am effektivsten ist Nuxt in Verbindung mit <b>TypeScript</b>,
-        <b>ESLint</b> und <b>Prettier</b>.
+        angewandt. Am effektivsten ist Nuxt in Verbindung mit
+        <InlineLink to="#typescript">TypeScript</InlineLink>
+        ,
+        <InlineLink to="#eslint">ESLint</InlineLink>
+        und
+        <InlineLink to="#prettier">Prettier</InlineLink>
+        .
       </p>
       <hr />
       <section class="grid gap-2">

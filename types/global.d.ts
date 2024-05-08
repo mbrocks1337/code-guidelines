@@ -5,3 +5,8 @@ interface LayoutItem {
   id: string;
   label: string;
 }
+
+interface QuoteItem {
+  text: string;
+  author: string;
+}

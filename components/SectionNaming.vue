@@ -18,10 +18,13 @@
         Variablen von Hand schreiben.
       </p>
       <img src="/assets/images/intelliSense.png" alt="IntelliSense Beispiel" />
-      <p>
-        Man ließt Code öfter als man schreibt. Inzwischen verwendet man große 4K
-        Bildschirme. Somit hat man keine Vorteile mit verkürzten Variablennamen.
-      </p>
+      <Alert variant="info">
+        <AlertDescription>
+          Man ließt Code öfter als man schreibt. Inzwischen verwendet man große
+          4K Bildschirme. Somit hat man keine Vorteile mit verkürzten
+          Variablennamen.
+        </AlertDescription>
+      </Alert>
       <hr />
       <CodeSnippet
         type="dont"
@@ -104,3 +107,4 @@ function moviesOnPage(movies: Movie[], page: number): Movie[] {
     </CardFooter>
   </Card>
 </template>
+<script setup lang="ts"></script>

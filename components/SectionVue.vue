@@ -28,8 +28,8 @@
       <p>
         Mit beiden API Styles lassen sich alle gewöhnlichen Anwendungsfälle
         umsetzen. Die Options API basiert sogar auf der Composition API. Die
-        Options API basiert auf einen Klassen-basiertes Model. Die Composition
-        API basiert auf reaktive Variablen.
+        Options API basiert auf einen klassenbasiertes Model. Die Composition
+        API basiert auf reaktiven Variablen.
       </p>
       <Alert variant="info">
         <AlertDescription>

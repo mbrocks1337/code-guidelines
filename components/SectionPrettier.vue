@@ -5,7 +5,7 @@
         <CardTitle>Prettier</CardTitle>
         <CardDescription>
           Prettier gibt die Formatierung deines Codes komplett vor. So bleibt
-          der Code im styling für deine gesamte Anwendung einheitlich.
+          der Code im Styling für deine gesamte Anwendung einheitlich.
         </CardDescription>
       </div>
       <img src="/assets/images/prettier.svg" alt="Vue Logo" width="100" />

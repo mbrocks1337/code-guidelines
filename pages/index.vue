@@ -17,6 +17,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
         ist.
       </p>
     </div>
+    <QuoteCarousel />
     <div class="mx-auto grid w-full max-w-6xl items-start gap-6">
       <div class="grid grid-cols-2 gap-6">
         <NavigationCard link="general" label="Allgemein" class="col-span-2">

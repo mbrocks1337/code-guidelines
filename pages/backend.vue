@@ -9,17 +9,36 @@
       class="mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]"
     >
       <nav class="grid gap-4 text-sm text-muted-foreground">
-        <a href="#">Laravel</a>
-        <a href="#">Laravel Pint</a>
+        <a v-for="item in layout" :key="item.id" :href="`#${item.id}`">
+          {{ item.label }}
+        </a>
       </nav>
       <div class="grid gap-6">
-        <Alert variant="info">
-          <AlertTitle>To Be Done</AlertTitle>
-          <AlertDescription>
-            This page is currently under construction.
-          </AlertDescription>
-        </Alert>
+        <component
+          :is="item.component"
+          v-for="item in layout"
+          :id="item.id"
+          :key="item.id"
+          class="scroll-mt-[calc(1.5rem_+_theme(spacing.16))]"
+        />
       </div>
     </div>
   </main>
 </template>
+<script setup lang="ts">
+import { SectionLaravel, SectionLaravelPint } from "#components";
+import type { LayoutItem } from "~/types/global";
+
+const layout: LayoutItem[] = [
+  {
+    component: SectionLaravel,
+    id: "laravel",
+    label: "Laravel",
+  },
+  {
+    component: SectionLaravelPint,
+    id: "laravel-pint",
+    label: "Laravel Pint",
+  },
+];
+</script>
