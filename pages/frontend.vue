@@ -34,7 +34,6 @@ import {
   SectionESLint,
   SectionPrettier,
 } from "#components";
-import type { LayoutItem } from "~/types/global";
 
 const layout: LayoutItem[] = [
   {

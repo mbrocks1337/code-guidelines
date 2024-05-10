@@ -28,7 +28,6 @@
 </template>
 <script setup lang="ts">
 import { SectionLaravel, SectionLaravelPint } from "#components";
-import type { LayoutItem } from "~/types/global";
 
 const layout: LayoutItem[] = [
   {

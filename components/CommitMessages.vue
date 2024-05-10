@@ -16,7 +16,7 @@ const defaultValue = ["commit-message-1"];
     collapsible
     :default-value="defaultValue"
   >
-    <AccordionItem value="commit-message-1">
+    <AccordionItem id="test" value="commit-message-1">
       <AccordionTrigger>feat:</AccordionTrigger>
       <AccordionContent>Eine Neuerung wird implementiert.</AccordionContent>
     </AccordionItem>

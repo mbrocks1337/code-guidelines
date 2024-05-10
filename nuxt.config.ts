@@ -23,7 +23,6 @@ export default defineNuxtConfig({
       meta: [{ name: "robots", content: "noindex" }],
     },
   },
-  ssr: false,
   experimental: {
     typedPages: true,
   },

@@ -2,10 +2,7 @@
 import { Quote } from "lucide-vue-next";
 import Autoplay from "embla-carousel-autoplay";
 
-import type { QuoteItem } from "~/types/global";
-import { shuffle } from "~/lib/utils";
-
-const quotes: QuoteItem[] = [
+const quotes: QuoteItem[] = shuffle([
   {
     text: "Gegen Lavendeltanten hilft nur Bastelpizza.",
     author: "Johanna K.",
@@ -182,7 +179,7 @@ const quotes: QuoteItem[] = [
     text: "Believe you can and you're halfway there.",
     author: "Theodore Roosevelt",
   },
-];
+]);
 </script>
 <template>
   <Carousel
@@ -198,7 +195,7 @@ const quotes: QuoteItem[] = [
   >
     <CarouselContent>
       <CarouselItem
-        v-for="(quote, index) in shuffle(quotes)"
+        v-for="(quote, index) in quotes"
         :key="index"
         class="max-w-6xl"
       >
