@@ -21,6 +21,9 @@ export default defineNuxtConfig({
       title: "Coding Guidelines",
       link: [{ rel: "icon", href: "/code-guidelines/favicon.ico" }],
       meta: [{ name: "robots", content: "noindex" }],
+      htmlAttrs: {
+        lang: "de",
+      },
     },
   },
   experimental: {

@@ -27,7 +27,11 @@ function setAdminRoles(users: User[]) {
   for (const user in users) {
     user.role = ADMIN_ROLE;
   }
-}"
+}
+
+setCustomerRoles(users);
+// oder
+setAdminRoles(users);"
       />
       <CodeSnippet
         type="do"
@@ -40,9 +44,9 @@ function setRoles(users: User[], role: number) {
   }
 }
 
-[CUSTOMER_ROLE, ADMIN_ROLE].forEach((role) => {
-  setRoles(users, role);
-});"
+setRoles(users, CUSTOMER_ROLE);
+// oder
+setRoles(users, ADMIN_ROLE);"
       />
     </CardContent>
   </Card>

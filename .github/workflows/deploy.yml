@@ -1,4 +1,3 @@
-# https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
 on:
   workflow_dispatch:
@@ -16,6 +15,7 @@ jobs:
           node-version: "20"
       # Pick your own package manager and build script
       - run: npm install
+      - run: npm run lint
       - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

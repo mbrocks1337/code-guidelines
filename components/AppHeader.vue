@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Menu } from "lucide-vue-next";
 import type { RouteNamedMap } from "vue-router/auto/routes";
 
 export interface RouteEntry {

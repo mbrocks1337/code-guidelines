@@ -102,7 +102,3 @@ onMounted(() => {
     </CardFooter>
   </Card>
 </template>
-
-<script>
-const arr = ["test", "test"];
-</script>
