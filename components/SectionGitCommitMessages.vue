@@ -15,9 +15,20 @@
     <CardContent class="grid gap-4">
       <p>
         Die erste Zeile beschreibt den Commit und diese wird auch in der Git
-        History dargestellt. Sie wird mit einem Präfix versehen, um zu
-        verstehen, was der Commit thematisiert. Die Headline und die
-        verschiedenen Sektionen mit einem Leerzeile trennen.
+        History dargestellt.
+      </p>
+      <ul class="list-inside list-disc">
+        <li>
+          <b>Ticketnummer</b> aus dem JIRA-Projekt
+          <small>(wenn es kein Ticket gibt, dann eins erstellen)</small>
+        </li>
+        <li><b>Commit-Typ</b> (fix, feat, refactor, etc.)</li>
+        <li><b>Spezifikation</b> des Commits (z.B. header, auth, database)</li>
+        <li><b>Kurze Beschreibung</b> des Commits</li>
+      </ul>
+      <p>
+        Die Headline und die verschiedenen Sektionen mit einem Leerzeile
+        trennen.
         <TextTooltip
           label="Eine Änderung, welche eine bestehende Funktionalität beeinträchtigt oder unbrauchbar macht."
           >BREAKING CHANGES
@@ -31,11 +42,10 @@
       />
       <CodeSnippet
         type="do"
-        l
         language="plaintext"
-        code="fix: fix foo to enable bar
+        code="TCKNR-69 fix(header): fix foo to enable bar
 
-This fixes the broken behavior of the component by doing xyz.
+This fixes the broken behavior of the header by doing xyz.
 
 BREAKING CHANGE
 Before this fix foo wasn't enabled at all, behavior changes from <old> to <new>"
@@ -51,3 +61,4 @@ Before this fix foo wasn't enabled at all, behavior changes from <old> to <new>"
     </CardFooter>
   </Card>
 </template>
+<script setup lang="ts"></script>

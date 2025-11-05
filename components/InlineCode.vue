@@ -1,5 +1,5 @@
 <template>
-  <span class="bg-muted text-primary p-1 rounded-xl font-mono">
+  <span class="rounded-xl bg-muted p-1 font-mono text-primary">
     <slot />
   </span>
 </template>

@@ -1,22 +1,6 @@
-<script setup lang="ts">
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-const defaultValue = ["commit-message-1"];
-</script>
-
 <template>
-  <Accordion
-    type="multiple"
-    class="w-full"
-    collapsible
-    :default-value="defaultValue"
-  >
-    <AccordionItem id="test" value="commit-message-1">
+  <Accordion type="multiple" class="w-full" collapsible>
+    <AccordionItem value="commit-message-1">
       <AccordionTrigger>feat:</AccordionTrigger>
       <AccordionContent>Eine Neuerung wird implementiert.</AccordionContent>
     </AccordionItem>

@@ -6,7 +6,7 @@ defineProps<{
 <template>
   <TooltipProvider>
     <Tooltip>
-      <TooltipTrigger class="underline decoration-dotted cursor-help">
+      <TooltipTrigger class="cursor-help underline decoration-dotted">
         <slot />
       </TooltipTrigger>
       <TooltipContent class="shadow-lg">

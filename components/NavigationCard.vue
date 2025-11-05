@@ -10,7 +10,7 @@ const props = defineProps<{
 <template>
   <NuxtLink
     :to="{ name: props.link }"
-    class="rounded-lg border text-xl bg-card text-muted-foreground shadow-sm grid place-items-center p-[4rem] hover:border-primary hover:text-primary transition-all gap-6"
+    class="grid place-items-center gap-6 rounded-lg border bg-card p-[4rem] text-xl text-muted-foreground shadow-sm transition-all hover:border-primary hover:text-primary"
   >
     <slot />
     {{ label }}

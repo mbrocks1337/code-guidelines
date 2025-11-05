@@ -3,10 +3,15 @@
     <CardHeader>
       <CardTitle>DRY (Don't Repeat Yourself)</CardTitle>
       <CardDescription>
-        Code sollte in den meisten Fällen nicht doppelt geschrieben werden.
+        Wenn man beim schreiben merkt, dass man sich langsam wiederholt...
       </CardDescription>
     </CardHeader>
     <CardContent class="grid gap-4">
+      <p>
+        In vielen Fällen ist es kein Problem, wenn man ähnliches Verhalten
+        zweimal schreibt. Beim dritten Mal sollte man jedoch überlegen, den Code
+        umzustrukturieren, um Wiederholungen zu vermeiden.
+      </p>
       <p>
         Im folgenden Beispiel werden zwei Funktionen mit ähnlicher
         Funktionalität <b>generalisiert und zusammengefügt</b>. Dadurch lässt
@@ -27,7 +32,11 @@ function setAdminRoles(users: User[]) {
   for (const user in users) {
     user.role = ADMIN_ROLE;
   }
-}"
+}
+
+setCustomerRoles(users);
+// oder
+setAdminRoles(users);"
       />
       <CodeSnippet
         type="do"
@@ -40,9 +49,9 @@ function setRoles(users: User[], role: number) {
   }
 }
 
-[CUSTOMER_ROLE, ADMIN_ROLE].forEach((role) => {
-  setRoles(users, role);
-});"
+setRoles(users, CUSTOMER_ROLE);
+// oder
+setRoles(users, ADMIN_ROLE);"
       />
     </CardContent>
   </Card>

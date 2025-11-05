@@ -2,6 +2,11 @@
 import { Quote } from "lucide-vue-next";
 import Autoplay from "embla-carousel-autoplay";
 
+export interface QuoteItem {
+  text: string;
+  author: string;
+}
+
 const quotes: QuoteItem[] = shuffle([
   {
     text: "Gegen Lavendeltanten hilft nur Bastelpizza.",
@@ -183,7 +188,7 @@ const quotes: QuoteItem[] = shuffle([
 </script>
 <template>
   <Carousel
-    class="my-10 mx-12 xl:-mx-10"
+    class="mx-12 my-10 xl:-mx-10"
     :opts="{
       loop: true,
     }"
@@ -200,7 +205,7 @@ const quotes: QuoteItem[] = shuffle([
         class="max-w-6xl"
       >
         <blockquote
-          class="h-full relative text-center text-xl rounded-lg border bg-card shadow-sm px-4 md:px-[10rem] grid gap-6"
+          class="relative grid h-full gap-6 rounded-lg border bg-card px-4 text-center text-xl shadow-sm md:px-[10rem]"
         >
           <Quote
             class="absolute bottom-5 left-5 text-muted-foreground/10 dark:text-muted-foreground/20"
@@ -208,11 +213,11 @@ const quotes: QuoteItem[] = shuffle([
             :stroke-width="1"
           />
           <p class="py-[4rem] italic text-primary">{{ quote.text }}</p>
-          <div class="text-end py-2 text-muted-foreground">
+          <div class="py-2 text-end text-muted-foreground">
             - {{ quote.author }}
           </div>
           <Quote
-            class="absolute top-5 right-5 text-muted-foreground/10 dark:text-muted-foreground/20"
+            class="absolute right-5 top-5 text-muted-foreground/10 dark:text-muted-foreground/20"
             :size="56"
             :stroke-width="1"
           />

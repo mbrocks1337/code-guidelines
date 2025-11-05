@@ -1,10 +1,16 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <div>
+      <NuxtPage />
+    </div>
   </NuxtLayout>
+  <ClientOnly>
+    <Toaster rich-colors position="top-right" />
+  </ClientOnly>
   <ScrollToTop />
 </template>
 
+<script setup lang="ts"></script>
 <style>
 .v-enter-active,
 .v-leave-active,

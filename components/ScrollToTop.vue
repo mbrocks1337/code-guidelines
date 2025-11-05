@@ -26,9 +26,10 @@ onBeforeUnmount(() => {
       class="fixed bottom-16 right-16"
       variant="outline"
       size="icon"
+      aria-label="Nach oben scrollen"
       @click="handleClick"
     >
-      <ArrowUpToLine class="w-4 h-4" />
+      <ArrowUpToLine class="h-4 w-4" />
     </Button>
   </Transition>
 </template>
