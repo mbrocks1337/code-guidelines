@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v1
         with:
           node-version: "20"
       # Pick your own package manager and build script
-      - run: npm install
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npx nuxt build --preset github_pages
+      - run: bun install
+      - run: bun run lint
+      - run: bun run typecheck
+      - run: bunx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
