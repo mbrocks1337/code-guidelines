@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
       size="icon"
       @click="handleClick"
     >
-      <ArrowUpToLine class="w-4 h-4" />
+      <ArrowUpToLine class="h-4 w-4" />
     </Button>
   </Transition>
 </template>

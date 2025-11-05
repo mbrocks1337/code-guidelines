@@ -28,8 +28,8 @@ const classObject = reactive({
       <span v-if="type === 'good'" class="flex gap-2"> <Meh />Okay:</span>
       <span v-if="type === 'dont'" class="flex gap-2"> <Frown />Schlecht:</span>
     </div>
-    <div class="rounded-md overflow-hidden bg-muted text-muted-foreground">
-      <div class="p-2 uppercase text-xs font-bold">
+    <div class="overflow-hidden rounded-md bg-muted text-muted-foreground">
+      <div class="p-2 text-xs font-bold uppercase">
         {{ language }}
       </div>
       <highlightjs

@@ -3,10 +3,15 @@
     <CardHeader>
       <CardTitle>DRY (Don't Repeat Yourself)</CardTitle>
       <CardDescription>
-        Code sollte in den meisten Fällen nicht doppelt geschrieben werden.
+        Wenn man beim schreiben merkt, dass man sich langsam wiederholt...
       </CardDescription>
     </CardHeader>
     <CardContent class="grid gap-4">
+      <p>
+        In vielen Fällen ist es kein Problem, wenn man ähnliches Verhalten
+        zweimal schreibt. Beim dritten Mal sollte man jedoch überlegen, den Code
+        umzustrukturieren, um Wiederholungen zu vermeiden.
+      </p>
       <p>
         Im folgenden Beispiel werden zwei Funktionen mit ähnlicher
         Funktionalität <b>generalisiert und zusammengefügt</b>. Dadurch lässt

@@ -3,7 +3,7 @@ import { Github, Copyright } from "lucide-vue-next";
 </script>
 <template>
   <footer
-    class="mt-auto border-t bg-background text-muted-foreground px-4 md:px-6 py-4 flex items-center justify-between flex-wrap gap-3 text-sm"
+    class="mt-auto flex flex-wrap items-center justify-between gap-3 border-t bg-background px-4 py-4 text-sm text-muted-foreground md:px-6"
   >
     <InlineLink to="https://github.com/mbrocks1337/code-guidelines" external>
       <Github />

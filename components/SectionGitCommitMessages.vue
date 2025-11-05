@@ -17,7 +17,7 @@
         Die erste Zeile beschreibt den Commit und diese wird auch in der Git
         History dargestellt.
       </p>
-      <ul class="list-disc list-inside">
+      <ul class="list-inside list-disc">
         <li>
           <b>Ticketnummer</b> aus dem JIRA-Projekt
           <small>(wenn es kein Ticket gibt, dann eins erstellen)</small>

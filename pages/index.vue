@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Server, StickyNote, Settings2 } from "lucide-vue-next";
+import { Server, StickyNote, Settings2, GitMerge } from "lucide-vue-next";
 </script>
 <template>
   <main
     class="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 p-4 pb-32 md:gap-8 md:p-10"
   >
     <div
-      class="mx-auto max-w-xl grid w-full gap-6 text-center"
+      class="mx-auto grid w-full max-w-xl gap-6 text-center"
       data-aos="fade-in"
     >
       <h1 class="text-4xl font-semibold">Coding Guidelines</h1>
@@ -26,7 +26,7 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
         <NavigationCard
           link="general"
           label="Allgemein"
-          class="col-span-2"
+          class="col-span-2 md:col-span-1"
           data-aos="fade-in"
         >
           <Settings2 :size="48" />
@@ -46,6 +46,14 @@ import { Server, StickyNote, Settings2 } from "lucide-vue-next";
           data-aos="fade-in"
         >
           <Server :size="48" />
+        </NavigationCard>
+        <NavigationCard
+          link="versioning-and-git"
+          label="Versionierung & Git"
+          class="col-span-2 md:col-span-1"
+          data-aos="fade-in"
+        >
+          <GitMerge :size="48" />
         </NavigationCard>
       </div>
     </div>
