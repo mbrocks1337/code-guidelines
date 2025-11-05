@@ -42,7 +42,6 @@
       />
       <CodeSnippet
         type="do"
-        l
         language="plaintext"
         code="TCKNR-69 fix(header): fix foo to enable bar
 

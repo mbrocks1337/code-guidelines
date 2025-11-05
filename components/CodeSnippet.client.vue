@@ -2,29 +2,30 @@
 import { Frown, Meh, Smile, ClipboardCopy } from "lucide-vue-next";
 import { toast } from "vue-sonner";
 
-const props = withDefaults(
-  defineProps<{
-    language?: string;
-    code?: string;
-    type?: "do" | "dont" | "good";
-    copy?: boolean;
-  }>(),
-  {
-    language: "typescript",
-    code: "",
-    type: undefined,
-  },
-);
+const {
+  language = "typescript",
+  type,
+  code,
+} = defineProps<{
+  language?: string;
+  code?: string;
+  type?: "do" | "dont" | "good";
+  copy?: boolean;
+}>();
 
 const classObject = reactive({
-  "text-green-500": props.type === "do",
-  "text-red-600": props.type === "dont",
-  "text-yellow-500": props.type === "good",
+  "text-green-500": type === "do",
+  "text-red-600": type === "dont",
+  "text-yellow-500": type === "good",
 });
 
-function onClick(code: string) {
-  toast.success("Code kopiert!");
-  navigator.clipboard.writeText(code);
+async function onClick(code: string) {
+  try {
+    await navigator.clipboard.writeText(code);
+    toast.success("Code kopiert!");
+  } catch (error) {
+    toast.error("Fehler beim Kopieren des Codes");
+  }
 }
 </script>
 
@@ -40,9 +41,15 @@ function onClick(code: string) {
         <div class="p-2 text-xs font-bold uppercase">
           {{ language }}
         </div>
-        <Button v-if="copy" size="sm" variant="ghost" @click="onClick(code)"
-          ><ClipboardCopy
-        /></Button>
+        <Button
+          v-if="copy && code"
+          size="icon"
+          variant="ghost"
+          aria-label="Code kopieren"
+          @click="onClick(code)"
+        >
+          <ClipboardCopy />
+        </Button>
       </div>
       <highlightjs
         :language="language"

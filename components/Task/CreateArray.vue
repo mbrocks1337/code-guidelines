@@ -5,10 +5,19 @@
     </CardHeader>
     <CardContent class="grid gap-4">
       <ol class="list-inside list-decimal">
-        <li>Leeres Array erstellen</li>
-        <li>Funktion hinzufügen um einen Todo hinzuzufügen</li>
-        <li>Liste ausgeben mit <InlineCode>console.log</InlineCode></li>
-        <li>(optional) Input- und Button-Element hinzufügen</li>
+        <li>Schreibe eine Funktion, die einen String entgegennimmt</li>
+        <li>
+          Normalisiere den String (z.&nbsp;B. auf Kleinbuchstaben, optional ohne
+          Sonderzeichen)
+        </li>
+        <li>
+          Vergleiche den ursprünglichen und den umgekehrten String, um
+          Palindrome zu erkennen
+        </li>
+        <li>
+          Gib das Ergebnis mit <InlineCode>console.log</InlineCode> aus oder
+          ergänze optional Input- und Button-Elemente
+        </li>
       </ol>
       <CodeSnippet
         language="javascript"

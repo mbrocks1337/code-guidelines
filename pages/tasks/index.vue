@@ -1,3 +1,3 @@
 <script lang="ts" setup>
-navigateTo("/tasks/level-1");
+await navigateTo("/tasks/level-1");
 </script>

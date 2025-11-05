@@ -47,9 +47,9 @@ function isLevelRoute(value: string): value is TaskRouteName {
   return LEVEL_NAMES.some((level) => level === value);
 }
 
-function onUpdate(value: string | number) {
+async function onUpdate(value: string | number) {
   const name = value.toString();
   if (!isLevelRoute(name)) return;
-  navigateTo({ name });
+  await navigateTo({ name });
 }
 </script>

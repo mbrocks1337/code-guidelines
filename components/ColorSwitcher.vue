@@ -11,6 +11,7 @@ function changeColorMode() {
 <template>
   <Button
     variant="secondary"
+    aria-label="Farbmodus ändern"
     size="icon"
     class="rounded-full"
     @click="changeColorMode"
