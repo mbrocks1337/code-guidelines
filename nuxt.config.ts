@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "nuxt-aos",
+    "@vueuse/nuxt",
   ],
   devtools: {
     enabled: false,
@@ -36,4 +37,5 @@ export default defineNuxtConfig({
   aos: {
     once: true,
   },
+  ssr: false,
 });

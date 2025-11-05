@@ -2,6 +2,11 @@
 import { Quote } from "lucide-vue-next";
 import Autoplay from "embla-carousel-autoplay";
 
+export interface QuoteItem {
+  text: string;
+  author: string;
+}
+
 const quotes: QuoteItem[] = shuffle([
   {
     text: "Gegen Lavendeltanten hilft nur Bastelpizza.",

@@ -1,10 +1,13 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <div>
+      <NuxtPage />
+    </div>
   </NuxtLayout>
   <ScrollToTop />
 </template>
 
+<script setup lang="ts"></script>
 <style>
 .v-enter-active,
 .v-leave-active,

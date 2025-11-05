@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useCarousel } from "./useCarousel";
 import type { WithClassAsProps } from "./interface";
 import { cn } from "@/lib/utils";
+import { useCarousel } from "./useCarousel";
 
 const props = defineProps<WithClassAsProps>();
 
@@ -9,7 +9,8 @@ const { orientation } = useCarousel();
 </script>
 
 <template>
-  <fieldset
+  <div
+    role="group"
     aria-roledescription="slide"
     :class="
       cn(
@@ -20,5 +21,5 @@ const { orientation } = useCarousel();
     "
   >
     <slot />
-  </fieldset>
+  </div>
 </template>
