@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "nuxt-aos",
     "@vueuse/nuxt",
   ],
+  css: ["vue-sonner/style.css"],
   devtools: {
     enabled: false,
   },

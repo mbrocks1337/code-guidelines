@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { Frown, Meh, Smile } from "lucide-vue-next";
+import { Frown, Meh, Smile, ClipboardCopy } from "lucide-vue-next";
+import { toast } from "vue-sonner";
 
 const props = withDefaults(
   defineProps<{
     language?: string;
     code?: string;
     type?: "do" | "dont" | "good";
+    copy?: boolean;
   }>(),
   {
     language: "typescript",
@@ -19,6 +21,11 @@ const classObject = reactive({
   "text-red-600": props.type === "dont",
   "text-yellow-500": props.type === "good",
 });
+
+function onClick(code: string) {
+  toast.success("Code kopiert!");
+  navigator.clipboard.writeText(code);
+}
 </script>
 
 <template>
@@ -29,8 +36,13 @@ const classObject = reactive({
       <span v-if="type === 'dont'" class="flex gap-2"> <Frown />Schlecht:</span>
     </div>
     <div class="overflow-hidden rounded-md bg-muted text-muted-foreground">
-      <div class="p-2 text-xs font-bold uppercase">
-        {{ language }}
+      <div class="flex items-center justify-between">
+        <div class="p-2 text-xs font-bold uppercase">
+          {{ language }}
+        </div>
+        <Button v-if="copy" size="sm" variant="ghost" @click="onClick(code)"
+          ><ClipboardCopy
+        /></Button>
       </div>
       <highlightjs
         :language="language"

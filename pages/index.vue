@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { Server, StickyNote, Settings2, GitMerge } from "lucide-vue-next";
+import {
+  Server,
+  StickyNote,
+  Settings2,
+  GitMerge,
+  ListChecks,
+} from "lucide-vue-next";
 </script>
 <template>
   <main
@@ -54,6 +60,14 @@ import { Server, StickyNote, Settings2, GitMerge } from "lucide-vue-next";
           data-aos="fade-in"
         >
           <GitMerge :size="48" />
+        </NavigationCard>
+        <NavigationCard
+          link="tasks-level-1"
+          label="Übungsaufgaben"
+          class="col-span-2"
+          data-aos="fade-in"
+        >
+          <ListChecks :size="48" />
         </NavigationCard>
       </div>
     </div>

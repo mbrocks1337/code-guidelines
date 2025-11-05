@@ -4,6 +4,9 @@
       <NuxtPage />
     </div>
   </NuxtLayout>
+  <ClientOnly>
+    <Toaster rich-colors position="top-right" />
+  </ClientOnly>
   <ScrollToTop />
 </template>
 

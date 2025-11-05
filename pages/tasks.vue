@@ -8,19 +8,21 @@
       <TabsList class="grid w-full grid-cols-3">
         <TabsTrigger
           value="tasks-level-1"
-          class="bg-green-50 text-green-800 data-[state=active]:bg-green-500 data-[state=active]:text-white"
+          class="bg-green-50 text-green-800 data-[state=active]:bg-green-500 data-[state=active]:text-white dark:bg-green-900/30 dark:text-green-200 dark:data-[state=active]:bg-green-800 dark:data-[state=active]:text-white"
         >
           Leicht
         </TabsTrigger>
+
         <TabsTrigger
           value="tasks-level-2"
-          class="bg-yellow-50 text-yellow-800 data-[state=active]:bg-yellow-500 data-[state=active]:text-white"
+          class="bg-yellow-50 text-yellow-800 data-[state=active]:bg-yellow-500 data-[state=active]:text-white dark:bg-yellow-900/30 dark:text-yellow-200 dark:data-[state=active]:bg-yellow-800 dark:data-[state=active]:text-white"
         >
           Mittel
         </TabsTrigger>
+
         <TabsTrigger
           value="tasks-level-3"
-          class="bg-red-50 text-red-800 data-[state=active]:bg-red-500 data-[state=active]:text-white"
+          class="bg-red-50 text-red-800 data-[state=active]:bg-red-500 data-[state=active]:text-white dark:bg-red-900/30 dark:text-red-200 dark:data-[state=active]:bg-red-800 dark:data-[state=active]:text-white"
         >
           Schwer
         </TabsTrigger>
